@@ -1,5 +1,5 @@
 # Mahdi Amini
-# P.Conc: finding the numbers which are divisable to 3 or 5
+# P.Conc: finding the numbers which are divisible to 3 or 5
 
 # Assignment NO: 2
 
@@ -16,6 +16,7 @@ for check_Number in range(1, limitation):
     # check whether multiplication of 3 is less or equal to the limitation
     if 3 * check_Number <= limitation:
         print(3 * check_Number, end=",")
-    # check whether multiplication of 5 is less or equal to the limitation and is not equal to the multiplication of 3 to avoid repeatation
-    if 5 * check_Number <= limitation and 3 * check_Number != 5 * check_Number:
+    # check whether multiplication of 5 is less or equal to the limitation and is not equal to the multiplication of
+    # 3 to avoid repetition
+    if limitation >= 5 * check_Number != 3 * check_Number:
         print(5 * check_Number, end=",")
