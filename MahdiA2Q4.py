@@ -1,10 +1,16 @@
+# ICS3UI-02 for Ms. Harris
+
 # Mahdi Amini
+
 # P.Conc: drawing in pygame
 
 # Assignment NO: 2
 
 # Question NO: 4
 
+
+# date started: 02/29/2020
+# date finished: 03/1/2020
 
 # This program creates a landscape (grass, a picnic table, shelter, trees,
 # sky with sun and cloud or clouds and rain)

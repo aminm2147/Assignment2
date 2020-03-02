@@ -1,15 +1,23 @@
+
+# ICS3UI-02 for Ms. Harris
+
 # Mahdi Amini
-# P.Conc: drawing in pygame
+
+# P.Conc: drawing in Turtle
 
 # Assignment NO: 2
 
-# Question NO: 4
+# Question NO: 3
+
+
+# date started: 02/28/2020
+# date finished: 02/29/2020
 
 # this program draw the Canada flag and red stars in random spots
 
 
-from turtle import *
-from random import randint
+from turtle import *  # using turtle library
+from random import randint  # using random library and randint module
 
 
 def rand_star():
@@ -21,12 +29,12 @@ def rand_star():
         goto(randint(-200, 200), randint(-200, 200))  # go to random spots
         for i in range(15):  # drawing 15 stars in random spots
             speed(9)
-            down()
+            down()  # start drawing
             begin_fill()
             forward(20)
             left(170)
             end_fill()
-        up()
+        up()  # do not draw any more
 
 
 # change the color to red

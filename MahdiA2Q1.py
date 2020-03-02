@@ -1,11 +1,16 @@
+# ICS3UI-02 for Ms. Harris
+
 # Mahdi Amini
-# P.Conc: finding the numbers which are divisible to 3 or 5
+
+# P.Conc: finding the numbers which are dividable to 3 or 5
 
 # Assignment NO: 2
 
 # Question NO: 1
 
 
+# date started: 02/26/2020
+# date finished: 02/26/2020
 # This program returns the sum of multiples of 3 and 5 between 0 and limit (parameter).
 
 # get the limitation from the user
