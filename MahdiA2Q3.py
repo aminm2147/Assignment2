@@ -1,12 +1,25 @@
+# Mahdi Amini
+# P.Conc: drawing in pygame
+
+# Assignment NO: 2
+
+# Question NO: 4
+
+# this program draw the Canada flag and red stars in random spots
+
+
 from turtle import *
 from random import randint
+
+
 def rand_star():
+    "drawing stars in random places"
     up()
-    color("red","yellow")
+    color("red", "yellow") # the color of stars is red
 
     while True:
-        goto(randint(-200,200),randint(-200,200))
-        for i in range(15):
+        goto(randint(-200, 200), randint(-200, 200))  # go to random spots
+        for i in range(15):  # drawing 15 stars in random spots
             speed(9)
             down()
             begin_fill()
@@ -16,17 +29,17 @@ def rand_star():
         up()
 
 
-#change the color to red
+# change the color to red
 color('red', 'red')
-#change the chape of the turtle to turtle
+# change the shape of the turtle to turtle
 shape("turtle")
-#the begining of the coloring part
+# the beginning of the coloring part
 begin_fill()
 
-up() #not to draw any thing
-goto(-60, -60)# go to the position
-down() #start drawing
-left(90)# drawing the left side og the flag
+up()  # not to draw any thing
+goto(-60, -60)  # go to the position
+down()  # start drawing
+left(90)  # drawing the left side og the flag
 forward(120)
 left(90)
 forward(60)
@@ -34,10 +47,10 @@ left(90)
 forward(120)
 left(90)
 forward(60)
-end_fill() #coloring the rectangle
-up() #not draw any thing
-goto(180, -60) # move to other position
-down() #drawing the right side of the flag
+end_fill()  # coloring the rectangle
+up()  # not draw any thing
+goto(180, -60)  # move to other position
+down()  # drawing the right side of the flag
 begin_fill()
 left(90)
 forward(120)
@@ -47,10 +60,10 @@ left(90)
 forward(120)
 left(90)
 forward(60)
-end_fill()
-up()
-goto(40, -60)
-down()
+end_fill()  # coloring the rectangle
+up()  # not draw any thing
+goto(40, -60)  # move to logo position
+down()  # start drawing the logo
 begin_fill()
 forward(6)
 left(100)
@@ -102,8 +115,7 @@ forward(20)
 right(125)
 forward(30)
 goto(40, -60)
-end_fill()
-hideturtle()
-rand_star()
-done()
-
+end_fill()  # color the logo
+hideturtle()  # the the drawing turtle
+rand_star()  # calling the function rand_star
+done()  # finish the process
