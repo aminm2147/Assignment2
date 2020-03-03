@@ -21,12 +21,20 @@ from random import randint  # using random library and randint module
 
 
 def rand_star():
-    "drawing stars in random places"
+    "drawing stars in random places except the flag position"
     up()
     color("red", "yellow") # the color of stars is red
 
     while True:
-        goto(randint(-200, 200), randint(-200, 200))  # go to random spots
+        x = randint(-200, 200)
+        y = randint(-200, 200)
+        goto(x, y)  # go to random spots
+        while True:  # not putting stars on the flag
+            if 240 > x > -120 and 60 > y > 60:
+                x = randint(-200, 200)
+                y = randint(-200, 200)
+            else:
+                break
         for i in range(15):  # drawing 15 stars in random spots
             speed(9)
             down()  # start drawing
@@ -43,7 +51,6 @@ color('red', 'red')
 shape("turtle")
 # the beginning of the coloring part
 begin_fill()
-
 up()  # not to draw any thing
 goto(-60, -60)  # go to the position
 down()  # start drawing
