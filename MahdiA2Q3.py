@@ -39,15 +39,16 @@ def color_rainbow():  # defining a function to set the color to a random
     if rancor == 5:
         turtle.color("#FFFF00")  # color YELLOW
     if rancor == 6:
-        turtle.color("#FF7F00")   # color ORANGE
+        turtle.color("#FF7F00")  # color ORANGE
     if rancor == 7:
         turtle.color("#FF0000")  # color RED
+
 
 #  set the color to light blue
 turtle.color("#33cddb")
 turtle.pencolor("black")  # set the color of the pen to black
 turtle.shape("turtle")
-for i in range(5):  # draw the inner 5 kits
+for i in range(5):  # draw the inner 5 kites
     turtle.begin_fill()
     turtle.right(36)
     turtle.forward(50)
@@ -59,10 +60,9 @@ for i in range(5):  # draw the inner 5 kits
     turtle.forward(50)
     turtle.end_fill()
 
-
 turtle.color("#269518")  # set the color to dark green
 turtle.pencolor("black")  # set the color of the pen to black
-for m in range(5):  # draw the outer 5 green kits
+for m in range(5):  # draw the outer 5 green kites
     turtle.begin_fill()
     turtle.right(36)
     turtle.forward(50)
@@ -108,7 +108,6 @@ for i in range(5):  # draw the surrounding kits in the color of rainbow
 
 undo_maker()
 turtle.write("bye", move=True, font=("Arial", 20, "normal"))  # write bye in the center of the screen
-
 
 turtle.hideturtle()  # hide the shape of the drawing turtle
 
