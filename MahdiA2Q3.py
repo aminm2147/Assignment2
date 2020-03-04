@@ -20,7 +20,7 @@ from random import randint  # using random library and randint module
 
 
 def rand_star():
-    "drawing stars in random places except the flag position"
+    """drawing stars in random places except the flag position"""
     turtle.up()
     turtle.color("red", "yellow")  # the color of stars is red
 
